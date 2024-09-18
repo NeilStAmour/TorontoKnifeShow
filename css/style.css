@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #333;
 }
 
 body {
@@ -43,6 +43,10 @@ body {
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+div.body {
+    max-width: 800px;
+    margin: 0 auto;
 }
 h1 {
     text-align: center;
@@ -55,9 +59,12 @@ h2 {
     font-size: 2em;
     padding-top: 2em;
 }
+h3 {
+    padding-top: 1em;
+    font-size: 1.4em;
+}
 p {
-    font-size: 1.1em;
-    letter-spacing: 0.1em;
+    font-size: 1em;
 }
 footer {
     height: 50px;
@@ -65,8 +72,11 @@ footer {
     background-color: #343434;
     text-align: center;
 }
-footer h6 {
+footer p {
     font-size: 0.8em;
     color:#ffffff
 }
 
+iframe {
+    width: 100%;
+}
