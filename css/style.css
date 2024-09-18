@@ -7,36 +7,46 @@
     color: #2d2d2d;
 }
 header {
-    background-color: #1b1b1a;
+    background-color: #1b1b20;
     color:#ffffff;
+    height: 60px;
 }
 nav {
-    
-  text-align: center;
+    text-align: center;
+    height: 100%;
 }
 nav ul {
     display: inline-block;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: #1b1b1a;
+    background-color: #1b1b20;
+    height: 100%;
 }
 nav ul li {
     float: left;
+    height: 100%;
 }
 nav ul li a {
+    font-size: 1.3em;
     width: 20em;
+    height: 100%;
     display: block;
     color: white;
     text-align: center;
-    padding: 1em 1em;
-    text-decoration: none;
+    text-decoration: underline solid transparent 2px;
+    text-underline-offset: 5px;
+    transition: text-decoration .4s linear;
+    padding: 12px 0;
 }
-
 li a:hover {
-    background-color: #333;
+    background-color: #334;
+    text-decoration: underline solid Currentcolor 2px;
+    transition: background-color .4s linear;
 }
-
+li a#homeTile {
+    text-decoration: underline solid Currentcolor 2px;
+}
 body {
     background-color: #d1d3c8;
     min-height: 100vh;
@@ -45,8 +55,20 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 div.body {
-    max-width: 800px;
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
+}
+div.body a {
+    padding: 0 4px;
+    font-size: 1.4em;
+    text-decoration: none;
+    box-shadow: inset 0 -0.2rem 0 #2d2d2d;
+    transition: box-shadow .3s linear;
+}
+div.body a:hover {
+    color:#eee;
+    box-shadow: inset 0 -3rem 0 #1b1b20;
 }
 h1 {
     text-align: center;
@@ -61,6 +83,7 @@ h2 {
 }
 h3 {
     padding-top: 1em;
+    padding-bottom: 0.4em;
     font-size: 1.4em;
 }
 p {
@@ -69,7 +92,7 @@ p {
 footer {
     height: 50px;
     padding-top: 10px;
-    background-color: #343434;
+    background-color: #1b1b20;
     text-align: center;
 }
 footer p {
@@ -80,3 +103,4 @@ footer p {
 iframe {
     width: 100%;
 }
+
