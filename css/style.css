@@ -32,7 +32,7 @@ nav ul li a {
     width: 20em;
     height: 100%;
     display: block;
-    color: white;
+    color:#ffffff;
     text-align: center;
     text-decoration: underline solid transparent 2px;
     text-underline-offset: 5px;
@@ -58,6 +58,9 @@ div.body {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+}
+div.body ul {
+    padding-left: 20px;
 }
 div.body a {
     padding: 0 4px;
