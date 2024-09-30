@@ -85,7 +85,7 @@ img {
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
-    filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
 h1 {
     text-align: center;
@@ -114,6 +114,7 @@ footer {
     padding-top: 10px;
     background-color: #1b1b20;
     text-align: center;
+    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
 footer p {
     font-size: 0.8em;
@@ -123,4 +124,5 @@ footer p {
 iframe {
     padding-top: 1em;
     width: 100%;
+    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
