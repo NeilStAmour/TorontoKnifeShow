@@ -102,6 +102,7 @@ h3 {
 h4 {
     padding-top: 0.2em;
     font-size: 1.2em;
+    font-weight: 600;
 }
 h4.email p {
 	display: none;
