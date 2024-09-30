@@ -20,7 +20,6 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    background-color: #1b1b20;
     height: 100%;
     justify-content: space-between;
 }
@@ -31,13 +30,15 @@ nav ul li {
 nav ul li a {
     font-size: 1.3em;
     height: 100%;
-    display: block;
+    display: flex;
+	justify-content:center;
+	align-items:center;
     color:#ffffff;
+    background-color: #1b1b20;
     text-align: center;
     text-decoration: underline solid transparent 2px;
     text-underline-offset: 5px;
     transition: text-decoration .4s linear;
-    padding: 12px 0;
 }
 li a:hover {
     background-color: #334;
@@ -54,22 +55,22 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-div.body {
+section {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
 }
-div.body ul {
+section ul {
     padding-left: 20px;
 }
-div.body a {
+section a {
     padding: 0 4px;
     font-size: 1.4em;
     text-decoration: none;
     box-shadow: inset 0 -0.2rem 0 #2d2d2d;
     transition: box-shadow .3s linear;
 }
-div.body a:hover {
+section a:hover {
     color:#eee;
     box-shadow: inset 0 -3rem 0 #1b1b20;
 }
