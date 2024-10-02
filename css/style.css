@@ -69,8 +69,8 @@ section li {
     padding: 5px 0;
 }
 section a {
-    padding: 0 4px;
-    font-size: 1.4em;
+    padding: 0px 4px;
+    font-size: 1em;
     text-decoration: none;
     box-shadow: inset 0 -0.2rem 0 #2d2d2d;
     transition: box-shadow .3s linear;
@@ -100,8 +100,7 @@ h3 {
     font-weight: 600;
 }
 h4 {
-    padding-top: 0.2em;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
 }
 h4.email p {
@@ -109,6 +108,7 @@ h4.email p {
 }
 p {
     font-size: 1em;
+    padding: 10px 0 10px 0;
 }
 footer {
     height: 50px;
