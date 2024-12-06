@@ -82,9 +82,8 @@ section.vendors a:hover {
     box-shadow: inset 0 -3rem 0 #2d2d2d;
 }
 img {
-    padding: 2em 0 0 0;
     display: block;
-    margin: 0 auto;
+    margin: 2em auto;
     width: 100%;
     max-width: 400px;
     filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
@@ -129,7 +128,7 @@ div.blue {
     border-radius: 15px;
     color: #D2D2D2;
     padding: 30px 30px 0px 30px;
-    margin-top: 50px;
+    margin: 30px 0;
 }
 
 div.blue h2, div.blue p, div.blue li, div.blue b, div.blue h4, div.blue {
@@ -153,7 +152,7 @@ div.green {
     background-color: #18403D;
     border-radius: 15px;
     padding: 30px 30px 0px 30px;
-    margin-top: 50px;
+    margin: 20px 0;
 }
 
 div.green h2, div.green h3, div.green p {
