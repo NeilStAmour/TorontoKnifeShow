@@ -6,49 +6,58 @@
     text-decoration: none;
     color: #2d2d2d;
 }
+
 header {
     background-color: #1b1b20;
-    color:#ffffff;
+    color: #ffffff;
     height: 60px;
+    width: 100%;
 }
+
 nav {
     text-align: center;
     height: 100%;
     max-width: 1080px;
     margin: 0 auto;
 }
+
 nav ul {
     display: flex;
     list-style-type: none;
     height: 100%;
     justify-content: space-between;
 }
+
 nav ul li {
     height: 100%;
     flex-grow: 1;
 }
+
 nav ul li a {
     font-size: 1.3em;
     font-family: "Cinzel Decorative", "Garamond", serif;
     height: 100%;
     display: flex;
-	justify-content:center;
-	align-items:center;
-    color:#ffffff;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
     background-color: #1b1b20;
     text-align: center;
     text-decoration: underline solid transparent 2px;
     text-underline-offset: 5px;
     transition: text-decoration .2s linear;
 }
+
 li a:hover {
     background-color: #182f40;
     text-decoration: underline solid Currentcolor 2px;
     transition: background-color .2s linear;
 }
+
 li a#homeTile {
     text-decoration: underline solid Currentcolor 2px;
 }
+
 body {
     background-color: #d1d3c8;
     min-height: 100vh;
@@ -56,31 +65,23 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-section {
+
+section.page {
     max-width: 600px;
     width: 94%;
     margin: 0 auto;
     padding: 0 0 20px 0;
 }
+
 section ul {
     padding-left: 20px;
     list-style-type: square;
 }
+
 section li {
     padding: 5px 0;
 }
-section.vendors a {
-    padding: 0px 4px;
-    font-size: 1em;
-    text-decoration: none;
-    box-shadow: inset 0 -0.2rem 0 #2d2d2d;
-    transition: box-shadow .3s linear;
-    color:#2d2d2d;
-}
-section.vendors a:hover {
-    color:#ffffff;
-    box-shadow: inset 0 -3rem 0 #2d2d2d;
-}
+
 img {
     display: block;
     margin: 2em auto;
@@ -88,6 +89,7 @@ img {
     max-width: 400px;
     filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
+
 h1 {
     text-align: center;
     font-size: 2.4em;
@@ -97,28 +99,34 @@ h1 {
     color: #ffffff;
     padding-bottom: 20px;
 }
+
 h2 {
     font-size: 2em;
     text-align: center;
     font-family: "Cinzel Decorative", "Garamond", serif;
 }
+
 h3 {
     padding-top: 0.6em;
     font-size: 1.4em;
     font-weight: 600;
 }
+
 h4 {
     padding: 5px 0 0px 0;
     font-size: 1em;
     font-weight: 600;
 }
+
 h4.email p {
-	display: none;
+    display: none;
 }
+
 p {
     font-size: 1em;
     padding: 0.8em 0;
 }
+
 b {
     font-weight: 600;
 }
@@ -131,7 +139,12 @@ div.blue {
     margin: 30px 0;
 }
 
-div.blue h2, div.blue p, div.blue li, div.blue b, div.blue h4, div.blue {
+div.blue h2,
+div.blue p,
+div.blue li,
+div.blue b,
+div.blue h4,
+div.blue {
     color: #D2D2D2;
 }
 
@@ -141,10 +154,11 @@ section div.blue p a {
     text-decoration: none;
     box-shadow: inset 0 -0.2rem 0 #D2D2D2;
     transition: box-shadow .3s linear;
-    color:#D2D2D2;
+    color: #D2D2D2;
 }
+
 section div.blue p a:hover {
-    color:#000000;
+    color: #000000;
     box-shadow: inset 0 -3rem 0 #eee;
 }
 
@@ -155,7 +169,9 @@ div.green {
     margin: 20px 0;
 }
 
-div.green h2, div.green h3, div.green p {
+div.green h2,
+div.green h3,
+div.green p {
     color: #D2D2D2;
 }
 
@@ -172,23 +188,53 @@ a.booking {
     display: block;
 }
 
-a.booking:hover{
+a.booking:hover {
     transition-duration: 0.2s;
     background-color: #ff2222;
     border-color: #ff2222;
 }
 
-section.vendors {
+section.vendor {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
-    width: 100%;
 }
-section.vendors h3{
+
+section.sub-vendor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    section.vendor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    section.sub-vendor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+section.vendor h3 {
     padding-top: 0;
     font-family: "Cinzel", "Garamond", serif;
     flex-wrap: wrap;
+    margin-right: 8px;
 }
-section.vendors hr {
+
+section.vendor hr {
     border: none;
     border-top: 3px double #2d2d2d;
     color: #333;
@@ -196,21 +242,30 @@ section.vendors hr {
     text-align: center;
     height: 5px;
     flex-grow: 1;
-    margin: 1em 0.0em 0 1em;
+    margin: 1em 0 0 0;
+}
 
-}
-section.vendors a{
-    height: 100%;
-    margin: 5px 0 0 1em;
-    box-shadow: inset 0 -0.1rem 0 #2d2d2d;
-    transition: box-shadow .3s linear;
-    text-align: right;
-    flex-wrap: wrap;
-}
-section.vendors a:hover {
-    color:#eee;
+section.vendor a:hover {
+    color: #eee;
     box-shadow: inset 0 -3rem 0 #2d2d2d;
 }
+
+section.vendor a {
+    padding: 0px 4px;
+    margin: 0 0 4px 8px;
+    font-size: 1em;
+    text-decoration: none;
+    box-shadow: inset 0 -0.2rem 0 #2d2d2d;
+    transition: box-shadow .3s linear;
+    color: #2d2d2d;
+    height: 1.4em;
+}
+
+section.vendor a:hover {
+    color: #ffffff;
+    box-shadow: inset 0 -3rem 0 #2d2d2d;
+}
+
 h5 {
     font-size: 1em;
     padding: 0 0 30px 20px;
@@ -238,8 +293,7 @@ html body section div.inline-container div.eo-form-wrapper div div.text-block.fr
     color: #D2D2D2;
 }
 
-html body section div.inline-container div.eo-form-wrapper div.form-container div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form div.main-form input.btn.w-100.btn-primary.mb-2 {
-}
+html body section div.inline-container div.eo-form-wrapper div.form-container div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form div.main-form input.btn.w-100.btn-primary.mb-2 {}
 
 html body section div.inline-container div.eo-form-wrapper div.form-container div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form div.main-form input.btn.w-100.btn-primary.mb-2:hover {
     transition-duration: 0.2s;
@@ -254,9 +308,10 @@ footer {
     text-align: center;
     filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
+
 footer p {
     font-size: 0.8em;
-    color:#ffffff;
+    color: #ffffff;
     padding: 0;
 }
 
