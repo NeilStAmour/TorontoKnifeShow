@@ -378,3 +378,8 @@ iframe {
     width: 100%;
     filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
+
+html body section.contact.page div.green div.inline-container {
+    background-color: #18403D !important;
+    border: none;
+}
