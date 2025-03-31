@@ -195,7 +195,6 @@ a.booking:hover {
 }
 
 a.sponsor {
-    max-width: 100px;
     display: block;
     text-align: center;
     margin: auto;
@@ -203,9 +202,17 @@ a.sponsor {
 
 a.sponsor img {
     max-height: 100px;
+    max-width: 200px;
     width: auto;
     margin: 0;
     filter: none;
+}
+
+section.sponsor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 section.vendor {
