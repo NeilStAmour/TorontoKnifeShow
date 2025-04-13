@@ -240,7 +240,7 @@ section.gallery {
     width: 90%;
     margin: auto;
     padding-bottom: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 section.gallery picture img {
