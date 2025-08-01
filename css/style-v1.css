@@ -369,10 +369,16 @@ footer div.socials {
     padding: 5px 0 5px 0;
 }
 
-footer div.socials img {
+footer div.socials img.facebook {
     height: 40px;
     width: auto;
-    margin: 0;
+    margin: 0 5px;
+}
+
+footer div.socials img.instagram {
+    height: 34px;
+    width: auto;
+    margin: 3px 5px;
 }
 
 footer p {
