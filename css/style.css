@@ -52,6 +52,7 @@ nav ul li a {
     text-decoration: underline solid transparent 2px;
     text-underline-offset: 5px;
     transition: text-decoration .2s linear;
+    border-radius: 8px;
 }
 @media only screen and (max-width: 400px) {
     nav ul li a {
@@ -59,7 +60,7 @@ nav ul li a {
     }
 }
 li a:hover {
-    background-color: #182f40;
+    background-color: #0b0b10;
     text-decoration: underline solid Currentcolor 2px;
     transition: background-color .2s linear;
 }
@@ -365,7 +366,7 @@ section div.text-section.accomidations a.booking:hover {
     transition-duration: 0.2s;
     background-color: #ff2222;
     border-color: #ff2222;
-    transform: scale(1.05);
+    transform: translateY(-2px);
 }
 
 /* Mailing List */
@@ -392,7 +393,7 @@ div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form d
 input.btn.w-100.btn-primary.mb-2:hover {
     background-color: #ff2222;
     border-color: #ff2222;
-    transform: scale(1, 1.1);
+    transform: translateY(-2px);
 }
 
 /* Sponsors */
@@ -551,7 +552,7 @@ div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form d
 input.btn.w-100.btn-primary.mb-2:hover {
     background-color: #ff2222;
     border-color: #ff2222;
-    transform: scale(1, 1.1);
+    transform: translateY(-2px);
 }
 
 /*Footer*/
@@ -586,4 +587,132 @@ footer p {
     font-size: 0.8em;
     color: #ffffff;
     padding: 0;
+}
+
+/* Landing Page */
+
+body.landingPage div.blue-hero {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+body.landingPage div.blue-hero picture img {
+    max-width: 160px;
+}
+
+body.landingPage section.page {
+    text-align: center;
+} 
+
+div.join {
+    margin-bottom: 0;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+    div.join {
+        padding: 20px 20px;  
+        margin-bottom: 10px;
+    }
+    div.text-section {
+        margin: 0 auto 10px;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    div.join {
+        padding: 30px 30px;  
+        margin-bottom: 10px;
+    }
+    div.text-section {
+        margin: 0 auto 30px;
+    }
+}
+        
+div.join div.date-highlight {
+    display: inline-block;
+    background: var(--card-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin: 16px auto;
+    font-size: 1.1rem;
+}
+
+html body section.page div.card.join div.inline-container {
+    background: #0000 !important;
+    border-color: #0000;
+    margin: auto;
+}
+html body section.page div.card.join div.inline-container div.eo-form-wrapper div.form-container 
+div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form div.main-form 
+input.btn.w-100.btn-primary.mb-2 {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+html body section.page div.card.join div.inline-container div.eo-form-wrapper div.form-container 
+div.emailoctopus-form-wrapper.emailoctopus-form-default form.emailoctopus-form div.main-form 
+input.btn.w-100.btn-primary.mb-2:hover {
+    background-color: #ff2222;
+    border-color: #ff2222;
+    transform: translateY(-2px);
+}
+        
+.section-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #182f40, transparent);
+    margin: 40px 0;
+    opacity: 0.2;
+}
+
+div.join h2 {
+    margin: 32px auto 0 auto;
+}
+
+div.join div.social-section p,
+div.join div.footer p {
+    color: #666;
+    font-size: 0.9em;
+}
+div.join div.footer p a {
+    color: var(--card-blue);
+}
+div.join div.footer p a:hover {
+    color: var(--red-highlight);
+    text-decoration: underline;
+}
+
+div.join div.social-section div.social-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+div.join div.social-section div.social-buttons a.social-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: white;
+    border: 2px solid #182f40;
+    color: #182f40;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+div.join div.social-section div.social-buttons a.social-button:hover {
+    background: #182f40;
+    color: white;
+    transform: translateY(-2px);
+}
+
+div.join div.social-section div.social-buttons a.social-button svg.social-icon {
+    width: 20px;
+    height: 20px;
 }
