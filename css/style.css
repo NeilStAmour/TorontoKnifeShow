@@ -232,7 +232,8 @@ section div.intro p {
 /* Review card */    
 section div.card div.review-card {
     background: 
-        url('https://photos.smugmug.com/photos/i-CjkJWtJ/0/LQw27NDvnGr9dvrTDM84DWp776m6SHqbgPKZ6ZN2m/XL/i-CjkJWtJ-XL.jpg'),
+        url(../images/RL_review.avif),
+        url(../images/RL_review.jpg),
         linear-gradient(135deg, #182f40, #0f1f2a);
     background-size: cover;
     background-position: center;
