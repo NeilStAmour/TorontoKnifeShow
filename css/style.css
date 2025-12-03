@@ -59,7 +59,7 @@ nav ul li a {
         font-size: 1.1em;
     }
 }
-li a:hover {
+nav ul li a:hover {
     background-color: #0b0b10;
     text-decoration: underline solid Currentcolor 2px;
     transition: background-color .2s linear;
@@ -439,69 +439,164 @@ iframe {
 }
 
 /*Vendors Page*/
-section.page.vendors div.card section.vendor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-}
-section.page.vendors div.card section.vendor section.sub-vendor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0;
-    flex-grow: 1;
-}
-section.page.vendors div.card section.vendor section.sub-vendor h3 {
-    padding-top: 0;
-    font-family: "Cinzel", "Garamond", serif;
-    margin-right: 8px;
-}
-section.page.vendors div.card section.vendor section.sub-vendor hr {
-    border: none;
-    border-top: 3px double #2d2d2d;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-    flex-grow: 1;
-    margin: 1em 0 0 0;
-}
-section.page.vendors div.card section.vendor section.sub-vendor a {
-    padding: 0px 4px;
-    margin: 0 0 4px 8px;
-    font-size: 1em;
-    text-decoration: none;
-    box-shadow: inset 0 -0.2rem 0 #2d2d2d;
-    transition: box-shadow .3s linear;
-    color: #2d2d2d;
-    height: 1.4em;
-}
-section.page.vendors div.card section.vendor section.sub-vendor a:hover {
-    color: #ffffff;
-    box-shadow: inset 0 -3rem 0 #2d2d2d;
-}
-section.page.vendors div.card section.vendor section.sub-vendor p {
-    font-size: 1em;
-    padding: 0 0 30px 20px;
+
+section.vendors {
+    max-width: 80%;
 }
 
-@media only screen and (max-width: 600px) {
-    section.vendor {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 0;
+.vendors-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.vendors-header h2 {
+    font-size: 2.5rem;
+    color: var(--card-blue);
+}
+
+.vendors-header p {
+    font-size: 1.15rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.vendor-count {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--card-blue), #335580);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.vendors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.vendor-card {
+    background: var(--card-white);
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 47, 64, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.vendor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(24, 47, 64, 0.15);
+}
+
+.vendor-name {
+    font-size: 1.3rem;
+    color: var(--card-blue);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.returning-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b0000, #c41616);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.vendor-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    margin-top: 4px;
+}
+
+.vendor-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #333;
+    background: #eee;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.vendor-description {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.vendor-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #182f40;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: gap 0.2s ease;
+}
+
+.vendor-link:hover {
+    gap: 10px;
+}
+
+.vendor-link::after {
+    content: '→';
+}
+
+/* Archive link */
+.archive-link {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(24, 47, 64, 0.1);
+}
+
+.archive-link a {
+    color: #182f40;
+    text-decoration: none;
+}
+
+.archive-link a:hover {
+    text-decoration: underline;
+}
+
+section.archive {
+    max-width: 900px;
+}
+
+@media (max-width: 600px) {
+    .vendors-header h2 {
+        font-size: 2rem;
     }
-    section.sub-vendor {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-        width: 100%;
+    
+    .vendors-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
-    section.page.vendors div.card section.vendor section.sub-vendor h3 {
-        letter-spacing: normal;
+    
+    .vendor-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    section.vendors {
+        max-width: 94%;
     }
 }
 

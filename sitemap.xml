@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-  <loc>https://torontoknifeshow.ca/</loc>
-  <lastmod>2025-06-01</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://torontoknifeshow.ca/vendors</loc>
-  <lastmod>2025-06-01</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://torontoknifeshow.ca/contact</loc>
-  <lastmod>2025-06-01</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://torontoknifeshow.ca/gallery</loc>
-  <lastmod>2025-06-01</lastmod>
-  <priority>0.80</priority>
-</url>
+    <url>
+        <loc>https://torontoknifeshow.ca/</loc>
+        <lastmod>2025-12-03</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://torontoknifeshow.ca/vendors</loc>
+        <lastmod>2025-12-03</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://torontoknifeshow.ca/vendors2025</loc>
+        <lastmod>2025-12-03</lastmod>
+        <priority>0.20</priority>
+    </url>
+    <url>
+        <loc>https://torontoknifeshow.ca/gallery</loc>
+        <lastmod>2025-12-03</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://torontoknifeshow.ca/contact</loc>
+        <lastmod>2025-12-03</lastmod>
+        <priority>0.80</priority>
+    </url>
 </urlset>
