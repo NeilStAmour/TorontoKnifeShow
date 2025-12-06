@@ -577,6 +577,20 @@ section.vendors {
 
 section.archive {
     max-width: 900px;
+    margin-top: 40px;
+}
+
+section.archive p {
+    text-align: center;
+}
+
+section.archive p a {
+    color: #182f40;
+    text-decoration: none;
+}
+
+section.archive p a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
