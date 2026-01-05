@@ -135,7 +135,6 @@ img {
     margin: auto;
     width: 100%;
     max-width: 200px;
-    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.6));
 }
 h1 {
     text-align: center;
@@ -403,32 +402,56 @@ section div.text-section.sponsors h3 {
     font-size: 1.3rem;
 }
 section div.text-section.sponsors div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 section div.text-section.sponsors p {
     text-align: center;
 }
 section div.text-section.sponsors a.sponsor {
     display: block;
-    text-align: center;
-    margin: auto;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+section div.text-section.sponsors a.sponsor:hover {
+    transform: translate(2px, -2px);
 }
 section div.text-section.sponsors a.sponsor img {
-    max-height: 100px;
-    max-width: 200px;
-    width: auto;
-    margin: 0;
-    filter: none;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
-@media only screen and (max-width: 400px) {
+
+section div.text-section.sponsors a.sponsor-klingspor img {
+    max-width: 120px;
+}
+
+section div.text-section.sponsors a.sponsor-admiral img {
+    max-width: 200px;
+}
+
+section div.text-section.sponsors a.sponsor-mossington img {
+    max-width: 170px;
+}
+
+section div.text-section.sponsors a.sponsor-muskokaturner img {
+    max-width: 140px;
+}
+
+@media only screen and (max-width: 768px) {
     section div.text-section.sponsors div {
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
-    section div.text-section.sponsors a.sponsor {
-        margin: 10px auto;
+}
+@media only screen and (max-width: 440px) {
+    section div.text-section.sponsors div {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }
 
