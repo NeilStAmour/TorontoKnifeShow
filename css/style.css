@@ -355,23 +355,17 @@ div.grid-item div.detail-label {
 section div.text-section.accomidations div {
     text-align: center;
 }
-section div.text-section.accomidations a.booking {
-    text-align: center;
-    background-color: var(--red-highlight);
-    border-color: var(--red-highlight);
-    color: #ffffff;
-    border-radius: 15px;
-    padding: 10px 10px;
-    margin: 15px auto;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    display: inline-block;
+
+section.page div.text-section.accomidations p.section-description a.hotel-link {
+    color: #182f40;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid #182f40;
+    transition: opacity 0.2s ease;
 }
-section div.text-section.accomidations a.booking:hover {
-    transition-duration: 0.2s;
-    background-color: #ff2222;
-    border-color: #ff2222;
-    transform: translateY(-2px);
+
+section.page div.text-section.accomidations p.section-description a.hotel-link:hover {
+    opacity: 0.7;
 }
 
 /* Mailing List */
