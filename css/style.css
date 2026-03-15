@@ -5,7 +5,9 @@
     --text-black: #2d2d2d;
     --header-black: #1b1b20;
     --red-highlight: #df4a4a;
+    --red: #ff2222;
     color-scheme: light;
+    
 }
 
 * {
@@ -345,6 +347,25 @@ div.grid-item div.detail-label {
     color: #666;
     margin-top: 4px;
 }
+div.visitor-info {
+    padding-top: 20px;
+    margin: auto;
+}
+section div.card div.visitor-info a {
+    background: var(--red-highlight);
+    color: white;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-shadow: none;
+    display: inline-block;
+}
+section div.card div.visitor-info a:hover {
+    background: var(--red);
+    transform: scale(1.05);
+}
+
 @media only screen and (max-width: 600px) {
     section div div.grid {
         grid-template-columns: repeat(1, auto);
