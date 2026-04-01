@@ -601,6 +601,22 @@ section.vendors {
     content: '→';
 }
 
+/* Vendor Directory */
+div.directory {
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 8px rgba(24, 47, 64, 0.1);
+
+}
+div.directory picture {
+
+}
+div.directory picture img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 /* Archive link */
 .archive-link {
     text-align: center;
