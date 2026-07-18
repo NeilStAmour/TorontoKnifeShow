@@ -1,6 +1,6 @@
 {
   "name": "Toronto Knife Show",
-  "short_name": "Toronto Knife Show",
+  "short_name": "TKS",
   "icons": [
     {
       "src": "/favicons/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#de4b4b",
-  "background_color": "#f9f5e0",
+  "theme_color": "#182f40",
+  "background_color": "#182f40",
   "display": "standalone"
 }
