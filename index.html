@@ -20,7 +20,7 @@
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@400;700&family=Open+Sans&display=swap"
         rel="stylesheet">
@@ -60,167 +60,255 @@
     </script>
 </head>
 
-<body>
+<body class="show">
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" id="homeTile">Info</a></li>
+                <li><a href="index.html" id="here">Show</a></li>
                 <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="exhibit.html">Exhibit</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <section class="show intro">
+        <p class="pretitle">Knives. Makers. Collectors. Community.</p>
+        <h1>Toronto Knife Show</h1>
+        <p class="light">The Toronto Knife Show brings together knife makers, bladesmiths, collectors, enthusiasts, 
+            suppliers and craftspeople for a full day dedicated to knives and the people who make them.</p>
+        <p class="light">Discover handcrafted knives, meet the makers behind them, browse tools and materials, and connect 
+            with a community that shares an appreciation for the craft.</p>
+        <div class="date-block">
+            <span>Saturday, April 17, 2027 · 9 AM–4 PM</span>
+            <span class="dot">·</span>
+            <span>Luxe Convention Centre · Mississauga, Ontario</span> <!-- TODO: Centre -->
+        </div>
+        <div class="cta-block">
+            <a class="cta solid" href="vendors.html">View 2026 Vendors</a>
+            <a class="cta outline" href="exhibit.html">Exhibit at the Show →</a>
+        </div>
+    </section>
     <div class="hero">
         <picture>
             <source srcset="images/logo-400.avif" type="image/avif">
-            <img src="images/logo-400.png" alt="Toronto Knife Show 2027">
         </picture>
     </div>
-    <section class="page">
-        <div class="intro">
-            <h1>Welcome to the Toronto Knife Show</h1>
-            <p>We are excited to announce the third annual Toronto Knife Show, taking place on April 17, 2027 
-                — and this year, we're bringing it to an incredible new home.</p>
-            <p>The Luxe Convention Centre is a modern, purpose-built event space attached to the Hyatt Place 
-                Toronto/Mississauga Centre. It gives us significantly more room for vendors, simple and free 
-                parking for everyone, and a space built for exactly this kind of show. We can't wait to build 
-                on the momentum from the last two years and see you there.</p>
+    <section class="community">
+        <div class="grid split">
+            <div>
+                <h2>A Show for the Knife Community</h2>
+                <p>The Toronto Knife Show is a place to discover new work, meet the people who make it and spend a day immersed 
+                    in the knife community.</p>
+                <p>Whether you're a collector looking for your next piece, a maker looking for inspiration and connections, or 
+                    simply someone who appreciates well-made tools, there's something to discover on the show floor.</p>
+            </div>
+            <picture>
+                <source srcset="images/knife-community.avif" type="image/avif">
+                <img class="tile" src="images/knife-community.jpg" alt="The Knife Community">
+            </picture>
         </div>
+    </section>
 
-        <div class="card">
-            <h2>See What Happened in past years</h2>
-            <p>Over 600 enthusiasts joined us for our inaugural show. From custom makers to collectors, the energy was 
-                incredible all day long. See what attendees experienced. </p>
-            <div class="review-card">
-                <div class="review-content-box">
-                    <div>Robert Laufer's Reviews</div>
-                    <h2>An Attendee's Perspective</h2>
-                    <p>Full photo gallery and detailed reviews from the 2025 and 2026 shows</p>
-                    <a href="https://rlauferblog.com/2025/04/27/toronto-knife-show-2025/" class="review-cta" target="_blank" rel="noopener" >TKS 2025 Review</a>
-                    <a href="https://rlauferblog.com/2026/04/20/toronto-knife-show-2026/" class="review-cta" target="_blank" rel="noopener" >TKS 2026 Review</a>
-                </div>
+    <section class="find">
+        <p class="pretitle">On the Show Floor</p>
+        <h2 class="pretitle">What You'll Find</h2>
+        <div class="grid find card">
+            <div>
+                <h3>Custom Knives & Bladesmithing</h3>
+                <p>Meet custom makers and bladesmiths and see handcrafted knives, forged blades and one-of-a-kind pieces 
+                    up close.</p>
+            </div>
+            <div>
+                <h3>Knives & Gear</h3>
+                <p>Browse knives and blades from makers and exhibitors, from one-of-a-kind custom work to small-batch and 
+                    semi-production pieces, along with related gear and accessories.</p>
+            </div>
+            <div>
+                <h3>Tools & Materials</h3>
+                <p>Find materials, tools and supplies for making, maintaining and working with knives.</p>
+            </div>
+            <div>
+                <h3>The Knife Community</h3>
+                <p>Talk knives with makers, collectors and enthusiasts, compare what you've brought with what others have 
+                    brought, and spend a day surrounded by people who share your interest.</p>
             </div>
         </div>
-        
-        <!-- Event Details Card -->
-        <div class="card event-details">
-            <h2 class="section-title">Event Details</h2>
-            <p class="section-description">Mark your calendars for a day of exceptional craftsmanship</p>
-            
-            <div class="grid details">
+    </section>
+
+    <section class="meet">
+        <p class="pretitle">Who's There</p>
+        <h2 class="pretitle">Meet the Exhibitors</h2>
+        <p>Hundreds of enthusiasts attend the Toronto Knife Show to discover new work and meet the people behind it.</p>
+        <p>Our exhibitors include custom makers, bladesmiths, dealers, suppliers and craftspeople from across the knife community.</p>
+        <br>
+        <a class="underline" href="vendors.html">View the 2026 Vendors →</a>
+
+        <div class="grid">
+            <picture>
+                <source srcset="images/see0.avif" type="image/avif">
+                <img class="tile" src="images/see0.jpg" alt="The Knife Community">
+            </picture>
+            <picture>
+                <source srcset="images/see1.avif" type="image/avif">
+                <img class="tile" src="images/see1.jpg" alt="The Knife Community">
+            </picture>
+            <picture>
+                <source srcset="images/see2.avif" type="image/avif">
+                <img class="tile" src="images/see2.jpg" alt="The Knife Community">
+            </picture>
+        </div>
+    </section>
+
+    <section class="see">
+        <h2>See the Show</h2>
+        <p><b class="red">Over 600 attendees</b> joined us at our most recent show.</p>
+        <p>But you don't have to take our word for what the Toronto Knife Show is like.</p>
+        <div class="image-card review">
+            <div class="image-content-box">
+                <h2>An Attendee's Perspective</h2>
+                <p>Knife enthusiast and collector <b>Robert Laufer</b> has attended and reviewed the Toronto Knife Show 
+                    since its inaugural year, documenting the makers, knives, people and experiences he encountered 
+                    along the way.</p>
+                <p>Read his detailed reviews and browse his extensive photography from previous shows.</p>
+                <a href="https://rlauferblog.com/2025/04/27/toronto-knife-show-2025/" class="review-cta" target="_blank" rel="noopener" >TKS 2025 Review</a>
+                <a href="https://rlauferblog.com/2026/04/20/toronto-knife-show-2026/" class="review-cta" target="_blank" rel="noopener" >TKS 2026 Review</a>
+            </div>
+        </div>
+<!--         <h2>See It for Yourself</h2>
+        <p>Browse photographs from previous Toronto Knife Shows and get a feel for the people, work, and atmosphere of 
+            the show.</p>
+        <a class="underline" href="gallery.html">View the Gallery →</a> -->
+    </section>
+
+    <section class="details">
+        <!-- Event Details Section -->
+        <h2>Event Details</h2>
+        <div class="card">
+            <div class="grid">
                 <div class="grid-item">
-                    <div class="detail-label">Date</div>
-                    <div class="detail-value">April 17, 2027</div>
-                    <div class="detail-subtext">Saturday</div>
+                    <div class="detail-label">Date & Time</div>
+                    <div class="detail-value">Saturday, April 17, 2027</div>
+                    <div class="detail-subtext">9 AM – 4 PM</div>
                 </div>
                 
                 <div class="grid-item">
-                    <div class="detail-label">Time</div>
-                    <div class="detail-value">9am - 4pm</div>
-                </div>
-                
-                <div class="grid-item">
-                    <div class="detail-label">Location</div>
+                    <div class="detail-label">Venue</div>
                     <div class="detail-value">Luxe Convention Centre</div>
                     <div class="detail-subtext">5787 Hurontario St, Mississauga, ON L4Z 2H7</div>
                 </div>
                 
-                <!-- <div class="grid-item">
+                <div class="grid-item">
                     <div class="detail-label">Admission</div>
                     <div class="detail-value">$10</div>
-                    <div class="detail-subtext">Children 12 and under free with adult</div>
-                </div> -->
+                    <div class="detail-subtext">Children under 12 attend free with an accompanying adult.</div>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="detail-label">Parking</div>
+                    <div class="detail-value">Free</div>
+                </div>
             </div>
                 
             <!-- <div class="visitor-info">
                 <p>Download our visitor guide for directions, parking information, show policies, and helpful tips.</p>
-                <a href="pdfs/tks-visitor-info-2026.pdf" target="_blank" rel="noopener" a>Visitor Information Sheet</a>
+                <a class="button" href="pdfs/tks-visitor-info-2026.pdf" target="_blank" rel="noopener" a>
+                    Visitor Information Sheet</a>
             </div> -->
         </div>
-        
-        <!-- What to Expect -->
-        <div class="text-section event-expectations">
-            <h2 class="section-title">What to Expect</h2>
-            <p class="section-description">
-                The Toronto Knife Show is open to the public and offers a platform for makers to showcase their work, share their knowledge, and engage with a community that appreciates their dedication to the craft.
-            </p>
-            <div class="grid expectations">
-                <div class="grid-item">
-                    <h3>Custom Knife Makers</h3>
-                    <p>Meet talented artisans showcasing handcrafted, one-of-a-kind pieces</p>
+    </section>
+
+    <section class="stay">
+        <h2>Stay Nearby</h2>
+        <div class="image-card">
+            <div class="image-content-box">
+                <p>The Luxe Convention Centre is attached to the Hyatt Place Toronto/Mississauga hotel, making it easy 
+                    to stay right at the show venue.</p>
+                <!-- <p>A special Toronto Knife Show group rate is available for attendees and vendors.</p> -->
+                <p>A special Toronto Knife Show group rate will be available for attendees and vendors, stay tuned for details.</p>
+                <!-- <div class="button-wrap">
+                    <a class="button hotel-link" href="#">Book with the Toronto Knife Show Group Rate</a>
                 </div>
-                
-                <div class="grid-item">
-                    <h3>Dealers & Collectors</h3>
-                    <p>Browse quality production knives and collectible pieces</p>
-                </div>
-                
-                <div class="grid-item">
-                    <h3>Supplies & Materials</h3>
-                    <p>Find premium knife-making supplies and materials</p>
-                </div>
-                
-                <div class="grid-item">
-                    <h3>Community</h3>
-                    <p>Connect with fellow enthusiasts who share your passion</p>
-                </div>
+                <p class="subtext">Group rate available until [DATE], subject to availability.</p> -->
             </div>
         </div>
+    </section>
 
-        <!-- Accommodations -->
-        <div class="text-section accomidations">
-            <h2 class="section-title">Accommodations</h2>
-            <p class="section-description">
-                For vendors and visitors wishing to spend the night in the city, a group rate at the attached Hyatt Place Toronto/Mississauga Centre will be available, stay tuned for availability.
-                <!-- For vendors and visitors wishing to spend the night in Toronto, a group rate is available at the <a href="https://app.marriott.com/reslink?id=1765369707518&key=GRP&app=resvlink" class="hotel-link" target="_blank" rel="noopener">Four Points by Sheraton</a> where the show is taking place. Book by March 15, 2026 to secure the rate. -->
-            </p>
-            
+    <section class="faq">
+        <p class="pretitle">Good to Know</p>
+        <h2 class="pretitle">Frequently Asked Questions</h2>
+        <h4>Can I buy tickets in advance?</h4>
+        <p>No. Tickets are sold at the door on the day of the show and paid for in cash.</p>
+        <h4>Is the show kid-friendly?</h4>
+        <p>Yes. Children are welcome at the show, but must be accompanied by an adult. Children under 12 attend free with 
+            an accompanying adult.</p>
+        <h4>Can I bring a pet or service animal?</h4>
+        <p>Service animals are always welcome, as required by law. Well-behaved pets are also welcome at the show.</p>
+        <h4>Can I bring my own knives to the show?</h4>
+        <p>Absolutely. The Toronto Knife Show is a place for people who like knives to bring them, talk about them, show 
+            them off and meet others who share the same interest.</p>
+        <p>You can also bring knives to complete arrangements with vendors, including selling or trading a knife you own, 
+            delivering an item arranged in advance, or dropping something off for sharpening or other services. You're 
+            welcome to make new arrangements directly with vendors at the show as well.</p>
+        <p>As a courtesy, please don't solicit sales at someone else's table.</p>
+        <h4>How do vendors accept payment?</h4>
+        <p>Payment methods vary by vendor. Most vendors accept cash, and some may offer other payment methods.</p>
+        <p>An ATM is available in the hotel lobby.</p>
+        <h4>Is the venue wheelchair accessible?</h4>
+        <p>Yes. The venue offers accessible parking, and the washrooms on the lower level are accessible by public elevator.</p>
+        <p>If you have specific accessibility needs, contact us beforehand and we'll be happy to help however we can.</p>
+    </section>
 
-        </div>
-        
+    <section class="mailing"> 
         <!-- Mailing List Card -->
         <div class="card mailing-list">
-            <h2 class="section-title">Stay Informed</h2>
+            <h2 class="section-title">Stay Up to Date</h2>
             <p class="section-description">
-                Sign up for our mailing list to receive updates about vendor announcements, special guests, 
-                hotel rates, and all the latest news about the Toronto Knife Show.
+                Get announcements and updates about the Toronto Knife Show.
             </p>
             <script async src="https://eocampaign1.com/form/e5a7b640-b395-11ef-b2d9-73a3355d1694.js" 
                 data-form="e5a7b640-b395-11ef-b2d9-73a3355d1694"></script>
         </div>
-        
-        <!-- Sponsors -->
-        <div class="text-section sponsors">
-            <h3>Proudly Supported By</h3>
-            <div>
-                <a class="sponsor sponsor-klingspor"
-                    href="https://www.klingspor.ca/"
-                    target="_blank" rel="noopener">
-                        <img src="images/sponsors/klingspor-logo.png" alt="klingspor.ca">
-                </a>
-                <a class="sponsor sponsor-admiral"
-                    href="https://www.admiralsteel.com/"
-                    target="_blank" rel="noopener">
-                        <img src="images/sponsors/AdmiralLogo-Blue.png" alt="admiralsteel.com">
-                </a>
-                <a class="sponsor sponsor-mossington"
-                    href="https://mossingtonknives.com/"
-                    target="_blank" rel="noopener">
-                        <img src="images/sponsors/mossington-logo.png" alt="mossingtonknives.com">
-                </a>
-                <a class="sponsor sponsor-muskokaturner"
-                    href="https://muskokaturner.com/"
-                    target="_blank" rel="noopener">
-                        <img src="images/sponsors/muskokaturner-logo.png" alt="muskokaturner.com">
-                </a>
-            </div>
-            <p style="margin-top: 20px; color: #666; font-size: 0.95rem;">
-                Their premium products empower the artisans behind many of the exceptional knives featured at the show.
-            </p>
+        <div class="card exhibit">
+            <h2>Want to Exhibit?</h2>
+            <p>The Toronto Knife Show welcomes makers, bladesmiths, dealers, suppliers and other craftspeople whose 
+                work complements the knife community.</p>
+            <p>Vendor applications open in the fall, with applications accepted in waves beginning in November.</p>
+            <br>
+            <a class="button" href="exhibit.html">Learn About Exhibiting →</a>
         </div>
-
     </section>
+
+    <section class="sponsors">
+        <!-- Sponsors -->
+        <h3>Proudly Supported By</h3>
+        <div>
+            <a class="sponsor sponsor-klingspor"
+                href="https://www.klingspor.ca/"
+                target="_blank" rel="noopener">
+                    <img src="images/sponsors/klingspor-logo.png" alt="klingspor.ca">
+            </a>
+            <a class="sponsor sponsor-admiral"
+                href="https://www.admiralsteel.com/"
+                target="_blank" rel="noopener">
+                    <img src="images/sponsors/AdmiralLogo-Blue.png" alt="admiralsteel.com">
+            </a>
+            <a class="sponsor sponsor-mossington"
+                href="https://mossingtonknives.com/"
+                target="_blank" rel="noopener">
+                    <img src="images/sponsors/mossington-logo.png" alt="mossingtonknives.com">
+            </a>
+            <a class="sponsor sponsor-muskokaturner"
+                href="https://muskokaturner.com/"
+                target="_blank" rel="noopener">
+                    <img src="images/sponsors/muskokaturner-logo.png" alt="muskokaturner.com">
+            </a>
+        </div>
+        <p class="subtext sponsor">
+            Their premium products empower the artisans behind many of the exceptional knives featured at the show.
+        </p>
+    </section>
+
+    <p class="address subtext">Luxe Convention Centre  ·  5787 Hurontario St, Mississauga, ON L5R 4B4</p>
     <iframe title="Google Maps Pin" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJyenhhw1BK4gRVIzx8MHS9T8&key=AIzaSyDJzr9_B6FQLpHNMZ0D74v1zFRyYAZShHI&zoom=13"></iframe>
     <footer>
