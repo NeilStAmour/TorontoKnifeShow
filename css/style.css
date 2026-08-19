@@ -1068,7 +1068,7 @@ section.vendors {
 }
 
 .vendor-link::after {
-    content: 'â';
+    content: '→';
 }
 
 /* Vendor Directory */
